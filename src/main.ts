@@ -1,3 +1,5 @@
+import './asserts/main.css'
+
 import { createApp } from 'vue'
 import { createPinia } from 'pinia'
 
@@ -7,11 +9,11 @@ import router from './router'
 
 async function startApplication(): Promise<void> {
 
-    const { worker } = await import('./mocks/browser')
+    // const { worker } = await import('./mocks/browser')
 
-    await worker.start({
-        onUnhandledRequest: 'bypass',
-    })
+    // await worker.start({
+    //     onUnhandledRequest: 'bypass',
+    // })
 
     const app = createApp(App)
 
@@ -21,7 +23,11 @@ async function startApplication(): Promise<void> {
     app.mount('#app')
 }
 
-void startApplication().catch((error) => {
+void startApplication()
+.then(() => {
+    console.log('Application started successfully.')
+})
+.catch((error) => {
     console.error('Error starting the application:', error)
 })
 

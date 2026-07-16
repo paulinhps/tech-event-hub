@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Protótipo estrutural do MainLayout</title>
+    <link rel="stylesheet" href="/src/asserts/main.css" />
+  </head>
+
+  <body>
+    <!--
+      Mobile/tablet:
+        header
+        main
+        footer
+
+      Desktop (lg):
+        header  header
+        aside   main
+        footer  footer
+
+      Não existem margens ou paddings estruturais. Cada região é responsável
+      apenas por ocupar sua posição na grid. As divs internas existem somente
+      para tornar as áreas visíveis durante a construção do MainLayout.
+    -->
+    <div
+      class="grid h-dvh grid-cols-1 grid-rows-[4rem_minmax(0,1fr)_4rem] overflow-hidden lg:grid-cols-[16rem_minmax(0,1fr)]"
+    >
+      <header class="lg:col-span-2" aria-label="Cabeçalho da aplicação">
+        <div class="size-full bg-[#b2f2bb]"></div>
+      </header>
+
+      <!-- <aside class="hidden min-h-0 min-w-0 overflow-y-auto lg:block" aria-label="Navegação lateral">
+        <div class="size-full bg-[#ffc9c9]"></div>
+      </aside> -->
+
+      <main class="min-h-0 min-w-0 overflow-y-auto" aria-label="Conteúdo principal">
+        <div class="size-full bg-[#a5d8ff]"></div>
+      </main>
+
+      <footer class="lg:col-span-2" aria-label="Rodapé da aplicação">
+        <div class="size-full bg-[#ffec99]"></div>
+      </footer>
+    </div>
+  </body>
+</html>
