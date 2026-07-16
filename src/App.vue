@@ -1,11 +1,8 @@
 <script setup lang="ts"></script>
 
 <template>
-  <h1>You did it!</h1>
+  <h1>Tech Event Hub</h1>
   <p>
-    Visit <a href="https://vuejs.org/" target="_blank" rel="noopener">vuejs.org</a> to read the
-    documentation
+    Welcome to the Tech Event Hub! This is a platform where you can discover and explore various tech events happening around the world. Stay updated with the latest conferences, workshops, and meetups in the tech industry.
   </p>
 </template>
-
-<style scoped></style>
