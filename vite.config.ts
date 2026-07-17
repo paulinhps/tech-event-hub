@@ -18,6 +18,7 @@ export default defineConfig({
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url)),
       '@layouts': fileURLToPath(new URL('./src/layouts', import.meta.url)),
+      '@shared': fileURLToPath(new URL('./src/shared', import.meta.url))
     },
   },
 })

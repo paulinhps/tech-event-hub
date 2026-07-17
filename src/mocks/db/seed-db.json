@@ -1,0 +1,380 @@
+{
+  "categories": [
+    {
+      "id": "category-frontend",
+      "name": "Frontend"
+    },
+    {
+      "id": "category-cloud-devops",
+      "name": "Cloud & DevOps"
+    },
+    {
+      "id": "category-ai-data",
+      "name": "AI & Data"
+    },
+    {
+      "id": "category-security",
+      "name": "Security"
+    },
+    {
+      "id": "category-mobile",
+      "name": "Mobile"
+    },
+    {
+      "id": "category-community-career",
+      "name": "Community & Career"
+    }
+  ],
+  "events": [
+    {
+      "id": "event-001",
+      "organizerId": "user-organizer-001",
+      "slug": "vue-summit-brasil-2026",
+      "title": "Vue Summit Brasil 2026",
+      "summary": "Um dia de arquitetura, performance e boas praticas para quem constroi aplicacoes Vue em producao.",
+      "description": "O Vue Summit Brasil reune profissionais da comunidade para discutir decisoes reais de arquitetura, evolucao de design systems, performance e qualidade. A programacao combina palestras tecnicas e estudos de caso voltados a equipes que utilizam Vue no dia a dia.",
+      "categoryId": "category-frontend",
+      "format": "in-person",
+      "status": "published",
+      "startsAt": "2026-09-18T09:00:00-03:00",
+      "endsAt": "2026-09-18T18:00:00-03:00",
+      "capacity": 350,
+      "registrationCount": 287,
+      "location": {
+        "type": "physical",
+        "venue": "Centro de Convencoes Frei Caneca",
+        "address": "Rua Frei Caneca, 569",
+        "city": "Sao Paulo",
+        "state": "SP"
+      },
+      "coverImageUrl": "https://images.unsplash.com/photo-1540575467063-178a50c2df87?auto=format&fit=crop&w=1600&q=80",
+      "sessions": [
+        {
+          "id": "session-001",
+          "title": "Arquitetura Vue que continua saudavel depois do MVP",
+          "description": "Decisoes de composicao, estado e fronteiras de feature para projetos que precisam crescer.",
+          "startsAt": "2026-09-18T10:00:00-03:00",
+          "endsAt": "2026-09-18T10:50:00-03:00",
+          "room": "Auditorio Principal",
+          "speakerIds": [
+            "speaker-001"
+          ]
+        },
+        {
+          "id": "session-002",
+          "title": "Performance percebida em interfaces modernas",
+          "description": "Como medir e melhorar carregamento, interacao e estabilidade visual em aplicacoes Vue.",
+          "startsAt": "2026-09-18T14:00:00-03:00",
+          "endsAt": "2026-09-18T14:50:00-03:00",
+          "room": "Auditorio Principal",
+          "speakerIds": [
+            "speaker-002"
+          ]
+        }
+      ],
+      "createdAt": "2026-02-10T14:20:00-03:00",
+      "updatedAt": "2026-07-08T11:30:00-03:00"
+    },
+    {
+      "id": "event-002",
+      "organizerId": "user-organizer-002",
+      "slug": "cloud-native-lab-kubernetes-na-pratica",
+      "title": "Cloud Native Lab: Kubernetes na Pratica",
+      "summary": "Workshop online para publicar, observar e escalar uma aplicacao em Kubernetes do inicio ao fim.",
+      "description": "Uma experiencia pratica para profissionais que ja conhecem containers e querem percorrer o ciclo completo de uma aplicacao em Kubernetes. Os participantes acompanham a configuracao de workloads, observabilidade, autoscaling e estrategias seguras de entrega.",
+      "categoryId": "category-cloud-devops",
+      "format": "online",
+      "status": "published",
+      "startsAt": "2026-08-22T09:00:00-03:00",
+      "endsAt": "2026-08-22T13:00:00-03:00",
+      "capacity": 120,
+      "registrationCount": 120,
+      "location": {
+        "type": "online",
+        "platform": "Zoom",
+        "accessUrl": null
+      },
+      "coverImageUrl": "https://images.unsplash.com/photo-1667372393119-3d4c48d07fc9?auto=format&fit=crop&w=1600&q=80",
+      "sessions": [
+        {
+          "id": "session-003",
+          "title": "Do container ao cluster",
+          "description": "Publicacao de uma aplicacao e configuracao dos primeiros recursos do Kubernetes.",
+          "startsAt": "2026-08-22T09:15:00-03:00",
+          "endsAt": "2026-08-22T10:45:00-03:00",
+          "room": null,
+          "speakerIds": [
+            "speaker-003"
+          ]
+        },
+        {
+          "id": "session-004",
+          "title": "Observabilidade e escalabilidade",
+          "description": "Metricas, health checks e autoscaling aplicados ao ambiente criado no workshop.",
+          "startsAt": "2026-08-22T11:00:00-03:00",
+          "endsAt": "2026-08-22T12:45:00-03:00",
+          "room": null,
+          "speakerIds": [
+            "speaker-003",
+            "speaker-004"
+          ]
+        }
+      ],
+      "createdAt": "2026-04-03T10:00:00-03:00",
+      "updatedAt": "2026-07-12T16:45:00-03:00"
+    },
+    {
+      "id": "event-003",
+      "organizerId": "user-organizer-001",
+      "slug": "ia-generativa-alem-do-prompt",
+      "title": "IA Generativa Alem do Prompt",
+      "summary": "Casos de uso, arquitetura e avaliacao de sistemas de IA generativa que precisam funcionar em producao.",
+      "description": "O encontro aborda o caminho entre um prototipo convincente e um produto de IA confiavel. Especialistas discutem recuperacao de contexto, avaliacoes, observabilidade, custos e os limites que equipes devem considerar antes de levar uma solucao a producao.",
+      "categoryId": "category-ai-data",
+      "format": "hybrid",
+      "status": "published",
+      "startsAt": "2026-10-07T18:30:00-03:00",
+      "endsAt": "2026-10-07T22:00:00-03:00",
+      "capacity": 500,
+      "registrationCount": 342,
+      "location": {
+        "type": "hybrid",
+        "platform": "YouTube Live",
+        "accessUrl": null,
+        "venue": "Cubos Academy",
+        "address": "Avenida Tancredo Neves, 2227",
+        "city": "Salvador",
+        "state": "BA"
+      },
+      "coverImageUrl": "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=1600&q=80",
+      "sessions": [
+        {
+          "id": "session-005",
+          "title": "RAG sem magica: escolhas e limites",
+          "description": "Uma leitura pratica das decisoes envolvidas em recuperacao e geracao de respostas.",
+          "startsAt": "2026-10-07T19:00:00-03:00",
+          "endsAt": "2026-10-07T19:50:00-03:00",
+          "room": "Auditorio",
+          "speakerIds": [
+            "speaker-005"
+          ]
+        },
+        {
+          "id": "session-006",
+          "title": "Como saber se a sua IA esta melhorando",
+          "description": "Estrategias de avaliacao automatica e humana para produtos baseados em modelos generativos.",
+          "startsAt": "2026-10-07T20:20:00-03:00",
+          "endsAt": "2026-10-07T21:10:00-03:00",
+          "room": "Auditorio",
+          "speakerIds": [
+            "speaker-006"
+          ]
+        }
+      ],
+      "createdAt": "2026-05-18T09:40:00-03:00",
+      "updatedAt": "2026-07-14T13:10:00-03:00"
+    },
+    {
+      "id": "event-004",
+      "organizerId": "user-organizer-003",
+      "slug": "security-by-design-day",
+      "title": "Security by Design Day",
+      "summary": "Seguranca aplicada ao ciclo de desenvolvimento, da modelagem de ameacas a resposta a incidentes.",
+      "description": "Uma conferencia para pessoas desenvolvedoras, arquitetas e liderancas que desejam incorporar seguranca ao processo de entrega. As palestras usam cenarios concretos para mostrar como reduzir riscos sem transformar seguranca em uma etapa isolada.",
+      "categoryId": "category-security",
+      "format": "in-person",
+      "status": "published",
+      "startsAt": "2026-11-12T08:30:00-03:00",
+      "endsAt": "2026-11-12T17:30:00-03:00",
+      "capacity": 220,
+      "registrationCount": 94,
+      "location": {
+        "type": "physical",
+        "venue": "Centro de Eventos FIERGS",
+        "address": "Avenida Assis Brasil, 8787",
+        "city": "Porto Alegre",
+        "state": "RS"
+      },
+      "coverImageUrl": "https://images.unsplash.com/photo-1563013544-824ae1b704d3?auto=format&fit=crop&w=1600&q=80",
+      "sessions": [
+        {
+          "id": "session-007",
+          "title": "Modelagem de ameacas para times de produto",
+          "description": "Uma abordagem colaborativa para antecipar riscos durante o desenho de novas funcionalidades.",
+          "startsAt": "2026-11-12T09:30:00-03:00",
+          "endsAt": "2026-11-12T10:20:00-03:00",
+          "room": "Sala Guaiba",
+          "speakerIds": [
+            "speaker-007"
+          ]
+        },
+        {
+          "id": "session-008",
+          "title": "Licoes de um incidente real",
+          "description": "Decisoes tecnicas e de comunicacao durante a resposta e a recuperacao de um incidente.",
+          "startsAt": "2026-11-12T14:30:00-03:00",
+          "endsAt": "2026-11-12T15:20:00-03:00",
+          "room": "Sala Guaiba",
+          "speakerIds": [
+            "speaker-008",
+            "speaker-009"
+          ]
+        }
+      ],
+      "createdAt": "2026-03-25T15:15:00-03:00",
+      "updatedAt": "2026-06-30T08:20:00-03:00"
+    },
+    {
+      "id": "event-005",
+      "organizerId": "user-organizer-002",
+      "slug": "mobile-cross-platform-em-escala",
+      "title": "Mobile Cross-Platform em Escala",
+      "summary": "Decisoes tecnicas e organizacionais para manter aplicativos multiplataforma usados por milhoes de pessoas.",
+      "description": "Um meetup online sobre arquitetura mobile, experiencia de desenvolvimento e evolucao de bases de codigo compartilhadas. Os estudos de caso comparam ganhos, custos e limites de estrategias cross-platform em produtos de grande escala.",
+      "categoryId": "category-mobile",
+      "format": "online",
+      "status": "published",
+      "startsAt": "2026-12-03T19:00:00-03:00",
+      "endsAt": "2026-12-03T21:30:00-03:00",
+      "capacity": 800,
+      "registrationCount": 156,
+      "location": {
+        "type": "online",
+        "platform": "Google Meet",
+        "accessUrl": null
+      },
+      "coverImageUrl": "https://images.unsplash.com/photo-1551650975-87deedd944c3?auto=format&fit=crop&w=1600&q=80",
+      "sessions": [
+        {
+          "id": "session-009",
+          "title": "Arquitetura mobile alem do framework",
+          "description": "Como estabelecer limites claros e reduzir o custo de mudanca em produtos multiplataforma.",
+          "startsAt": "2026-12-03T19:15:00-03:00",
+          "endsAt": "2026-12-03T20:00:00-03:00",
+          "room": null,
+          "speakerIds": [
+            "speaker-010"
+          ]
+        },
+        {
+          "id": "session-010",
+          "title": "Developer experience para dezenas de squads",
+          "description": "Ferramentas e convencoes que tornam entregas mobile mais previsiveis em escala.",
+          "startsAt": "2026-12-03T20:15:00-03:00",
+          "endsAt": "2026-12-03T21:00:00-03:00",
+          "room": null,
+          "speakerIds": [
+            "speaker-011"
+          ]
+        }
+      ],
+      "createdAt": "2026-06-02T11:05:00-03:00",
+      "updatedAt": "2026-07-15T17:00:00-03:00"
+    },
+    {
+      "id": "event-006",
+      "organizerId": "user-organizer-001",
+      "slug": "data-platform-engineering-forum-2026",
+      "title": "Data Platform Engineering Forum 2026",
+      "summary": "Arquiteturas e praticas para oferecer dados confiaveis como produto dentro das organizacoes.",
+      "description": "O forum conecta engenharia de dados, plataforma e governanca. A programacao explora contratos de dados, self-service, observabilidade e os acordos necessarios para que diferentes times produzam e consumam informacao com confianca.",
+      "categoryId": "category-ai-data",
+      "format": "hybrid",
+      "status": "published",
+      "startsAt": "2026-05-14T09:00:00-03:00",
+      "endsAt": "2026-05-14T18:00:00-03:00",
+      "capacity": 400,
+      "registrationCount": 376,
+      "location": {
+        "type": "hybrid",
+        "platform": "YouTube Live",
+        "accessUrl": null,
+        "venue": "Expominas",
+        "address": "Avenida Amazonas, 6200",
+        "city": "Belo Horizonte",
+        "state": "MG"
+      },
+      "coverImageUrl": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1600&q=80",
+      "sessions": [
+        {
+          "id": "session-011",
+          "title": "Dados como produto sem slogans",
+          "description": "Responsabilidades, contratos e medidas de qualidade para tornar o conceito operacional.",
+          "startsAt": "2026-05-14T10:00:00-03:00",
+          "endsAt": "2026-05-14T10:50:00-03:00",
+          "room": "Auditorio 1",
+          "speakerIds": [
+            "speaker-012"
+          ]
+        }
+      ],
+      "createdAt": "2025-12-08T13:30:00-03:00",
+      "updatedAt": "2026-05-15T10:00:00-03:00"
+    },
+    {
+      "id": "event-007",
+      "organizerId": "user-organizer-003",
+      "slug": "dev-community-night-recife",
+      "title": "Dev Community Night Recife",
+      "summary": "Uma noite de palestras curtas, networking e troca de experiencias entre comunidades de tecnologia do Recife.",
+      "description": "O encontro aproxima comunidades locais de frontend, backend, dados e infraestrutura. A edicao teria apresentacoes curtas e um espaco aberto para conexoes entre pessoas em diferentes momentos da carreira.",
+      "categoryId": "category-community-career",
+      "format": "in-person",
+      "status": "cancelled",
+      "startsAt": "2026-08-06T18:30:00-03:00",
+      "endsAt": "2026-08-06T22:00:00-03:00",
+      "capacity": 180,
+      "registrationCount": 73,
+      "location": {
+        "type": "physical",
+        "venue": "Porto Digital",
+        "address": "Rua do Apolo, 181",
+        "city": "Recife",
+        "state": "PE"
+      },
+      "coverImageUrl": "https://images.unsplash.com/photo-1528605248644-14dd04022da1?auto=format&fit=crop&w=1600&q=80",
+      "sessions": [
+        {
+          "id": "session-012",
+          "title": "Comunidades que sustentam carreiras",
+          "description": "Relatos sobre aprendizado, pertencimento e oportunidades criadas por comunidades locais.",
+          "startsAt": "2026-08-06T19:15:00-03:00",
+          "endsAt": "2026-08-06T20:00:00-03:00",
+          "room": "Auditorio Cais",
+          "speakerIds": [
+            "speaker-013",
+            "speaker-014"
+          ]
+        }
+      ],
+      "createdAt": "2026-04-20T12:00:00-03:00",
+      "updatedAt": "2026-07-10T09:25:00-03:00"
+    },
+    {
+      "id": "event-008",
+      "organizerId": "user-organizer-002",
+      "slug": "platform-engineering-summit-2027",
+      "title": "Platform Engineering Summit 2027",
+      "summary": "Uma futura conferencia sobre plataformas internas, autonomia de times e experiencia de desenvolvimento.",
+      "description": "Rascunho inicial de uma conferencia dedicada a platform engineering. O conteudo ainda sera expandido antes da publicacao.",
+      "categoryId": "category-cloud-devops",
+      "format": "in-person",
+      "status": "draft",
+      "startsAt": "2027-03-11T09:00:00-03:00",
+      "endsAt": "2027-03-12T18:00:00-03:00",
+      "capacity": 600,
+      "registrationCount": 0,
+      "location": {
+        "type": "physical",
+        "venue": "CentroSul",
+        "address": "Avenida Governador Gustavo Richard, 850",
+        "city": "Florianopolis",
+        "state": "SC"
+      },
+      "coverImageUrl": "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1600&q=80",
+      "sessions": [],
+      "createdAt": "2026-07-01T10:30:00-03:00",
+      "updatedAt": "2026-07-01T10:30:00-03:00"
+    }
+  ]
+}

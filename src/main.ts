@@ -9,11 +9,11 @@ import router from './router'
 
 async function startApplication(): Promise<void> {
 
-    // const { worker } = await import('./mocks/browser')
+    const { worker } = await import('./mocks/browser')
 
-    // await worker.start({
-    //     onUnhandledRequest: 'bypass',
-    // })
+    await worker.start({
+        onUnhandledRequest: 'bypass',
+    })
 
     const app = createApp(App)
 
@@ -24,10 +24,10 @@ async function startApplication(): Promise<void> {
 }
 
 void startApplication()
-.then(() => {
-    console.log('Application started successfully.')
-})
-.catch((error) => {
-    console.error('Error starting the application:', error)
-})
+    .then(() => {
+        console.log('Application started successfully.')
+    })
+    .catch((error) => {
+        console.error('Error starting the application:', error)
+    })
 
