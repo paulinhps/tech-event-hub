@@ -3,14 +3,24 @@ import type { PublicEventSummaryDto } from "./event.types";
 
 export async function getEvents(signal?: AbortSignal): Promise<PublicEventSummaryDto[]> {
     // Simulate an API call
-    const response = await fetch(EVENT_BASE_URL, {
-        signal,
-    })
 
-    if (!response.ok) {
-        throw new Error('Nao foi possivel carregar eventos.')
+    try {
+        const response = await fetch(EVENT_BASE_URL, {
+            signal,
+        })
+        if (!response.ok) {
+            throw new Error('Nao foi possivel carregar eventos.')
+        }
+
+        return (await response.json()) as PublicEventSummaryDto[]
+    } catch (error) {
+        if (error instanceof DOMException && error.name === 'AbortError') {
+            throw error
+        }
+
+        throw new Error('Nao foi possivel carregar eventos.', {
+            cause: error,
+        })
     }
-
-    return (await response.json()) as PublicEventSummaryDto[]
 
 }

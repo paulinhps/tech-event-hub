@@ -8,7 +8,7 @@ const handlers: HttpHandler[] = [
 
         const database = loadDatabase();
 
-        const publicEvents = database.events.map((ev) => ({
+        const publicEvents = database.events.filter(({status}) => status === 'published').map((ev) => ({
             id: ev.id,
             title: ev.title,
             summary: ev.summary,

@@ -28,6 +28,10 @@ const emit = defineEmits<{
 const formattedDate = computed(() => {
   const date = new Date(props.date)
 
+  if(Number.isNaN(date.getTime())) {
+    return null
+  }
+
   const parts = new Intl.DateTimeFormat('pt-BR', {
     day: '2-digit',
     month: 'short',
@@ -37,7 +41,7 @@ const formattedDate = computed(() => {
   }).formatToParts(date)
 
   const getPart = (type: Intl.DateTimeFormatPartTypes) =>
-    parts.find((part) => part.type === type)?.value ?? ''
+    parts.find((part) => part.type === type)!.value
 
   const day = getPart('day')
   const month = getPart('month').replace('.', '')
@@ -99,7 +103,7 @@ const formatLabel = computed(() => EVENT_FORMAT_LABELS[props.format])
       <div class="mt-auto pt-5">
         <div class="border-t border-slate-200 pt-4">
           <div class="space-y-3 text-sm text-slate-700">
-            <div class="flex items-center gap-2.5">
+            <div class="flex items-center gap-2.5" v-if="formattedDate">
               <svg aria-hidden="true" class="size-5 shrink-0 text-brand-600" viewBox="0 0 24 24" fill="none"
                 stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
                 <rect width="18" height="18" x="3" y="4" rx="2" />
